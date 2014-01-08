@@ -1,7 +1,7 @@
 from setuptools import setup
 
 __version__ = "0.1"
-__doc__ = """Basic resource finder package to let desktop apps find resources like dlls and datafiles they need both when running from source and not."
+__doc__ = """Basic resource finder package to let desktop apps find resources like dlls and datafiles they need both when running from source and not."""
 
 setup(
  name = "resource_finder",
