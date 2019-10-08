@@ -1,10 +1,11 @@
 import os
 from platform_utils.paths import module_path, is_frozen, embedded_data_path
+from six import string_types 
 
 class ResourceNotFoundError(IOError): pass
 
 def find_application_resource(resource_name, extra_path=''):
- if not isinstance(extra_path, basestring):
+ if not isinstance(extra_path, string_types):
   extra_path = os.path.join(*extra_path)
  if is_frozen():
   base_path = embedded_data_path()

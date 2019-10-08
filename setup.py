@@ -8,6 +8,7 @@ setup(
  version = __version__,
  description = __doc__,
  py_modules = ['resource_finder'],
+ install_requires = ['six', ],
  zip_safe = False,
  classifiers = [
   'Development Status :: 3 - Alpha',
